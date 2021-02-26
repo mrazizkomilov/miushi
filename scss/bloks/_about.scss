@@ -1,0 +1,22 @@
+.about {
+  text-align: center;
+}
+.about__title{
+   margin-top: 90px;
+   margin-bottom: 90px;
+}
+.list__about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.item__about {
+  font-family: "Open Sans";
+  font-weight: normal;
+  width: 195px;
+  height: 200px;
+  line-height: 2;
+  margin-bottom: 10px;
+}

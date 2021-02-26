@@ -1,0 +1,36 @@
+@media screen and (max-width: 863px) {
+   .about {
+      width: 800px;
+      text-align: center;
+      margin-left: 35% !important;
+      justify-content: center;
+   }
+   .about__list {
+      padding-left: 10px;
+   }
+   .Reviews {
+      padding-left: 40% !important;
+   }
+   .Reviews__title {
+      margin-left: 18% !important;
+   }
+   .Reviews__list li:nth-child(2) {
+      display: none;
+   }
+}
+@media (max-width: 1300px) {
+   .about {
+      margin-left: 8%;
+   }
+}
+@media screen and (min-width: 863px) {
+   .slider__wrapper {
+      margin-left: 10%;
+   }
+   .Reviews {
+      margin-left: 8%;
+   }
+   .compani-about__text{
+      margin-left: 10%;
+   }
+}

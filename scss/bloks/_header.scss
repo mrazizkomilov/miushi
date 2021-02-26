@@ -1,0 +1,236 @@
+.header {
+  left: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background: white;
+  margin: 0 auto;
+}
+.header__body {
+  position: relative;
+  z-index: 40;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.header__burger {
+  display: none;
+}
+.header-top__list {
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0;
+}
+
+.header-top__item {
+  margin-left: 25px;
+}
+
+.call-btn {
+  text-decoration: none;
+  padding: 12px 20px 15px 20px;
+  color: #2ebf1a;
+  border: 1px solid #2ebf1a;
+  border-radius: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+}
+.About_link {
+  text-decoration: none;
+  padding: 12px 60px 15px 60px;
+  color: white;
+  background-color: #fd4f10;
+  border-radius: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+  top: 575px;
+  position: absolute;
+  left: 117px;
+  z-index: 5;
+  transition: ease 0.5s box-shadow;
+}
+.About_link:hover {
+  box-shadow: 0 0 40px rgba(73, 115, 255, 0.6);
+}
+.nomer {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.job_time {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+}
+.site-navbar {
+  height: 47px;
+  border-top: 1px solid #f2f2f2;
+  margin-top: 20px;
+}
+.site-navbar__list {
+  display: flex;
+  align-items: center;
+}
+.site-navbar__link {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: ease 0.5s background-color;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+}
+.site-navbar__link:hover {
+  background-color: #84c604;
+  color: white;
+  cursor: pointer;
+}
+
+.img_figura {
+  margin-left: 11px;
+}
+.img_user,
+.img_cart {
+  height: 16px;
+  margin-right: 15px;
+}
+
+.site-navbar__link--cart::before {
+  content: "2";
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  font-size: 8px;
+  text-align: center;
+  margin-left: 13px;
+  top: 12px;
+  position: absolute;
+}
+.header__bookmarks {
+  display: none;
+}
+
+@media (max-width: 863px) {
+  .site-navbar__list {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #123;
+    display: block;
+    color: white;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+  }
+
+  .site-navbar__link {
+    color: white;
+    font-size: 25px;
+  }
+  .site-navbar__list.activ {
+    top: 66px;
+  }
+  .header-top__list {
+    display: none;
+  }
+  .header__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__logo img {
+    height: 50px;
+  }
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: #84c604;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger.activ::before {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  .header__burger.activ::after {
+    bottom: 9px;
+    transform: rotate(-45deg);
+  }
+  .header__burger.activ span {
+    display: none;
+  }
+  .header__bookmarks {
+    display: block;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #84c604;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .header__logo {
+    text-align: center;
+  }
+  .header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+  }
+  .slider__wrapper {
+    margin-left: 14%;
+  }
+  .container {
+    padding: 0 23px;
+  }
+  .compani-about__text {
+    margin-left: 10%;
+  }
+}
